@@ -19,6 +19,7 @@ dependencies:
     - layout_builder
     - node
     - path
+    - system
     - taxonomy
     - toolbar
 _core:
@@ -64,3 +65,4 @@ permissions:
   - 'view own unpublished content'
   - 'view page revisions'
   - 'view recipe revisions'
+  - 'view the administration theme'
