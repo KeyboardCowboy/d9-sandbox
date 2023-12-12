@@ -1,7 +1,0 @@
-adding:
-  dependencies:
-    module:
-      - contact
-  permissions:
-    - 'access site-wide contact form'
-removing: {  }

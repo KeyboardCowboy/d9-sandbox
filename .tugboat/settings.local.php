@@ -155,3 +155,4 @@ $settings['skip_permissions_hardening'] = TRUE;
 $settings['config_exclude_modules'] = ['devel', 'stage_file_proxy'];
 
 $settings['config_sync_directory'] = '../config/sync';
+$config["config_split.config_split.nosync"]["status"] = FALSE;
