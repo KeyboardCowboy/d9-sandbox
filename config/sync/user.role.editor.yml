@@ -21,7 +21,6 @@ dependencies:
     - node
     - path
     - shortcut
-    - system
     - taxonomy
     - toolbar
 _core:
@@ -31,7 +30,6 @@ label: Editor
 weight: 4
 is_admin: null
 permissions:
-  - 'access administration pages'
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
@@ -78,4 +76,3 @@ permissions:
   - 'view latest version'
   - 'view page revisions'
   - 'view recipe revisions'
-  - 'view the administration theme'
