@@ -1,0 +1,19 @@
+uuid: 2dc90b10-cd04-4f67-8784-dbf5263d0bb7
+langcode: en
+status: false
+dependencies: {  }
+id: nosync
+label: nosync
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/nosync
+module:
+  contact: 0
+  dblog: 0
+  system: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }
