@@ -68,7 +68,7 @@ services:
 #        - composer require --dev drupal/stage_file_proxy
 
         # Set the tugboat-specific Drupal settings.
-#        - cp "${TUGBOAT_ROOT}/.tugboat/settings.local.php" "${DOCROOT}/sites/default/settings.local.php"
+        - cp "${TUGBOAT_ROOT}/.tugboat/settings.local.php" "${DOCROOT}/sites/default/settings.local.php"
 
         # Map your custom modules and themes into the Drupal structure.
         #- ln -snf "${TUGBOAT_ROOT}/custom/themes" "${DOCROOT}/themes/custom"
