@@ -1,0 +1,9 @@
+.idea
+vendor
+web/*
+!web/sites
+web/sites/*
+!web/sites/development.services.yml
+!web/sites/default
+web/sites/default/*
+!web/sites/default/settings.php
