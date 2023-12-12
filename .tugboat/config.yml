@@ -6,6 +6,8 @@ services:
     # Use the latest available 5.x version of MySQL
     image: tugboatqa/mariadb:10.5
 
+    checkout: true
+
     # A set of commands to run while building this service
     commands:
       # Configure the server for the site to run on.
@@ -23,7 +25,7 @@ services:
         # TODO: Copy a database dump from an external server. The public
         # SSH key found in the Tugboat Repository configuration must be
         # copied to the external server in order to use scp.
-        - zcat ./database.sql.gz | mysql tugboat
+        - zcat ${TUGBOAT_ROOT}/database.sql.gz | mysql tugboat
 
       # Run any commands needed to prepare the site.  This is generally not needed
       # for database services.
