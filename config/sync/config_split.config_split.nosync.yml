@@ -12,8 +12,6 @@ storage: folder
 folder: ../config/nosync
 module:
   contact: 0
-  dblog: 0
-  system: 0
 theme: {  }
 complete_list: {  }
 partial_list: {  }
