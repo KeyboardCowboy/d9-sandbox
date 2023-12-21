@@ -7,10 +7,12 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor5: 0
+  cl_server: 0
   config: 0
   config_ignore: 0
   config_split: 0
   config_translation: 0
+  contact: 0
   content_moderation: 0
   contextual: 0
   datetime: 0
@@ -41,7 +43,9 @@ module:
   path: 0
   path_alias: 0
   responsive_image: 0
+  sdc: 0
   search: 0
+  serialization: 0
   shortcut: 0
   system: 0
   taxonomy: 0
