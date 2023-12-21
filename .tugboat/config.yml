@@ -108,3 +108,6 @@ services:
 
         # One last cache rebuild.
         - vendor/bin/drush cache:rebuild
+
+        # Get a list of all environment vars and their example values.
+        - ${TUGBOAT_ROOT}/.tugboat/commands/list-envs.sh
