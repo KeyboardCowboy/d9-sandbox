@@ -45,6 +45,9 @@ services:
     # Wait until the mysql service is done building.
     depends: database
 
+    aliases:
+      - storybook
+
     # A set of commands to run while building this service
     commands:
       # The INIT command configures the webserver.
@@ -56,6 +59,9 @@ services:
         # Link the document root to the expected path. This example links /web
         # to the docroot.
         - ln -snf "${TUGBOAT_ROOT}/web" "${DOCROOT}"
+
+        # Add the Storybook nginx configuration.
+        - cp "${TUGBOAT_ROOT}/.tugboat/storybook.nginx.conf" /etc/nginx/sites-enabled/
 
         # Create any required directories that don't exist.
         # - mkdir -p "${TUGBOAT_ROOT}/files-private"
