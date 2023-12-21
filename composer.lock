@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "950bc04ee5dd86bb948101756ae5c27d",
+    "content-hash": "82ded9ff4ebfef85bcf7179721447bc8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1201,6 +1201,52 @@
             "time": "2023-07-27T18:11:59+00:00"
         },
         {
+            "name": "drupal/cl_server",
+            "version": "2.0.0-beta5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/cl_server.git",
+                "reference": "2.0.0-beta5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cl_server-2.0.0-beta5.zip",
+                "reference": "2.0.0-beta5",
+                "shasum": "b59f96968565aab4476e77dd55e4ad356975ec11"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10",
+                "php": ">=8.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-beta5",
+                    "datestamp": "1700826209",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mateu Aguiló Bosch",
+                    "homepage": "https://www.drupal.org/user/550110",
+                    "email": "mateu@mateuaguilo.com"
+                }
+            ],
+            "description": "Providers server rendering for CL Components",
+            "homepage": "https://www.drupal.org/project/cl_server",
+            "support": {
+                "source": "https://git.drupalcode.org/project/cl_server"
+            }
+        },
+        {
             "name": "drupal/config_ignore",
             "version": "3.1.0",
             "source": {
@@ -1663,6 +1709,62 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core."
+        },
+        {
+            "name": "drupal/sdc",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/sdc.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sdc-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "7530ff16d2492345b54b4d181e907cc03a255fa1"
+            },
+            "require": {
+                "drupal/core": "^9.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1700730812",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "e0ipso",
+                    "homepage": "https://www.drupal.org/user/550110"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "mherchel",
+                    "homepage": "https://www.drupal.org/user/118428"
+                }
+            ],
+            "description": "Allows discovery and rendering of self-contained UI components.",
+            "homepage": "https://www.drupal.org/project/sdc",
+            "support": {
+                "source": "https://git.drupalcode.org/project/sdc"
+            }
         },
         {
             "name": "drush/drush",
@@ -6386,7 +6488,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/cl_server": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

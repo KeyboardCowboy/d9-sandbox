@@ -16,11 +16,13 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/cl_server": "^2.0@beta",
         "drupal/config_ignore": "^3.1",
         "drupal/config_split": "^2.0",
         "drupal/core-composer-scaffold": "^9.5",
         "drupal/core-project-message": "^9.5",
         "drupal/core-recommended": "^9.5",
+        "drupal/sdc": "^1.0",
         "drush/drush": "^11.6"
     },
     "conflict": {
