@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name storybook-${TUGBOAT_DEFAULT_SERVICE_ID}.tugboatqa.com;
+    server_name storybook-${TUGBOAT_SERVICE_TOKEN}.tugboatqa.com;
 
     root ${DOCROOT}/storybook;
     index index.html;
