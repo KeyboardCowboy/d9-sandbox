@@ -55,6 +55,10 @@ services:
         # Install task
         #- sh -c "$(curl --location https://raw.githubusercontent.com/go-task/task/v3.28.0/install-task.sh)" -- -d -b /usr/local/bin
 
+        # Install envsubst, required for dynamic nginx server block for aliases.
+        - apt update
+        - apt install gettext
+
         # Set file permissions on tugboat command files.
         - chgrp -R www-data "${TUGBOAT_ROOT}/.tugboat/commands"
         - find "${TUGBOAT_ROOT}/.tugboat/commands" -type f -exec chmod 0775 {} \;
@@ -73,7 +77,8 @@ services:
         - ln -snf "${TUGBOAT_ROOT}/web" "${DOCROOT}"
 
         # Add the Storybook nginx configuration.
-#        - cp "${TUGBOAT_ROOT}/.tugboat/storybook.nginx.conf" /etc/nginx/sites-enabled/
+        - cp "${TUGBOAT_ROOT}/.tugboat/storybook.nginx.conf" /etc/nginx/sites-enabled/
+        - envsubst '$TUGBOAT_SERVICE_TOKEN $DOCROOT' < "${TUGBOAT_ROOT}/.tugboat/storybook.nginx.conf.template" > /etc/nginx/sites-enabled/storybook.conf
 
         # Create any required directories that don't exist.
         # - mkdir -p "${TUGBOAT_ROOT}/files-private"
