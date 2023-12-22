@@ -5,7 +5,7 @@ server {
     root ${DOCROOT}/storybook;
     index index.html;
 
-    location /storybook {
+    location / {
         try_files $uri $uri/ =404;
     }
 }
