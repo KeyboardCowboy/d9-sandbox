@@ -70,7 +70,7 @@ services:
         - ln -snf "${TUGBOAT_ROOT}/web" "${DOCROOT}"
 
         # Add the Storybook nginx configuration.
-        - cp "${TUGBOAT_ROOT}/.tugboat/storybook.nginx.conf" /etc/nginx/sites-enabled/
+#        - cp "${TUGBOAT_ROOT}/.tugboat/storybook.nginx.conf" /etc/nginx/sites-enabled/
 
         # Create any required directories that don't exist.
         # - mkdir -p "${TUGBOAT_ROOT}/files-private"
