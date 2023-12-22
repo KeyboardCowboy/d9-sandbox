@@ -1,0 +1,14 @@
+version: '3'
+
+dotenv: ['.env', '.env.defaults']
+
+includes:
+  drupal: ./vendor/lullabot/drainpipe/tasks/drupal.yml
+
+output: prefixed
+silent: false
+
+tasks:
+  node:install:
+    desc: "Install Node.js"
+    cmds: []
