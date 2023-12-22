@@ -77,7 +77,6 @@ services:
         - ln -snf "${TUGBOAT_ROOT}/web" "${DOCROOT}"
 
         # Add the Storybook nginx configuration.
-        - cp "${TUGBOAT_ROOT}/.tugboat/storybook.nginx.conf" /etc/nginx/sites-enabled/
         - envsubst '$TUGBOAT_SERVICE_TOKEN $DOCROOT' < "${TUGBOAT_ROOT}/.tugboat/storybook.nginx.conf.template" > /etc/nginx/sites-enabled/storybook.conf
 
         # Create any required directories that don't exist.
