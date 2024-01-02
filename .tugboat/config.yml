@@ -130,3 +130,9 @@ services:
 
         # One last cache rebuild.
         - vendor/bin/drush cache:rebuild
+
+        # Get a list of all environment vars and their example values.
+        # Make commands executable.
+        - chgrp -R www-data "${TUGBOAT_ROOT}/.tugboat/commands"
+        - find "${TUGBOAT_ROOT}/.tugboat/commands" -type f -exec chmod 0775 {} \;
+        - ${TUGBOAT_ROOT}/.tugboat/commands/list-envs.sh
