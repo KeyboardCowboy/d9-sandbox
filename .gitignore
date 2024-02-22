@@ -1,5 +1,6 @@
 .idea
 vendor
+node_modules
 web/*
 !web/sites
 web/sites/*
